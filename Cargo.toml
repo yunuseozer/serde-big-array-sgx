@@ -8,10 +8,11 @@ documentation = "https://docs.rs/serde-big-array"
 repository = "https://github.com/est31/serde-big-array"
 readme = "README.md"
 edition = "2018"
+exclude = ["/sgx/*"]
 
 [dependencies]
-serde = { version = "1.0", default-features = false }
-serde_derive = "1.0"
+serde = { git = "https://github.com/mesalock-linux/serde-sgx" }
+serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx" }
 
 [dev-dependencies]
 serde_json = "1.0"
