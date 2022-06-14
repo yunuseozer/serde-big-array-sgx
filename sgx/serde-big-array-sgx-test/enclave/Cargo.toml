@@ -12,11 +12,11 @@ default = []
 
 [dependencies]
 serde-big-array = { path = "../../.." }
-serde = { git = "https://github.com/mesalock-linux/serde-sgx" }
-serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx" }
-serde_json = { git = "https://github.com/mesalock-linux/serde-json-sgx" }
+serde = { git = "https://github.com/yunuseozer/serde-sgx" }
+serde_derive = { git = "https://github.com/yunuseozer/serde-sgx" }
+serde_json = { git = "https://github.com/yunuseozer/serde-json-sgx" }
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
-sgx_types = { rev = "v1.1.3", git = "https://github.com/apache/teaclave-sgx-sdk.git" }
-sgx_tstd = { rev = "v1.1.3", git = "https://github.com/apache/teaclave-sgx-sdk.git" }
-sgx_tunittest = {rev = "v1.1.3", git = "https://github.com/apache/teaclave-sgx-sdk.git" }
+sgx_types = { rev = "v1.1.4-upgrade", git = "https://github.com/yunuseozer/incubator-teaclave-sgx-sdk.git" }
+sgx_tstd = { rev = "v1.1.4-upgrade", git = "https://github.com/yunuseozer/incubator-teaclave-sgx-sdk.git" }
+sgx_tunittest = {rev = "v1.1.4-upgrade", git = "https://github.com/yunuseozer/incubator-teaclave-sgx-sdk.git" }
